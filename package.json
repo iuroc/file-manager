@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "ts-node src/server.ts"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.0"
+  }
+}
