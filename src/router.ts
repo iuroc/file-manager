@@ -3,7 +3,7 @@ import index from './router/index'
 import createDir from './router/createDir'
 import getList from './router/getList'
 import IResponse from './IResponse'
-// 设置路由
+/** 路由匹配规则 */
 const router: {
     [key: string]: (query: ParsedUrlQuery) => IResponse | string
 } = {
