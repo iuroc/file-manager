@@ -1,5 +1,6 @@
 import { createServer } from 'http'
 import { parse as urlParse } from 'url'
+import { readFileSync } from 'fs'
 import router from './router'
 // 创建服务器
 createServer((request, response) => {
@@ -16,7 +17,8 @@ createServer((request, response) => {
         // 获取响应内容
         const data = (() => {
             // 路由匹配成功
-            if (fun) return fun(query)
+            if (typeof fun == 'string') return readFileSync(fun).toString()
+            if (typeof fun == 'function') return fun(query)
             // 路由不匹配
             return '路由错误'
         })()

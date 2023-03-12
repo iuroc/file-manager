@@ -1,13 +1,12 @@
 import { ParsedUrlQuery } from 'querystring'
-import index from './router/index'
 import createDir from './router/createDir'
 import getList from './router/getList'
 import IResponse from './IResponse'
-/** 路由匹配规则 */
+/** 路由匹配规则，值为文件名或函数名 */
 const router: {
-    [key: string]: (query: ParsedUrlQuery) => IResponse | string
+    [key: string]: ((query: ParsedUrlQuery) => IResponse | string) | string
 } = {
-    '/': index,
+    '/': './html/index.html',
     '/createDir': createDir,
     '/getList': getList
 }
