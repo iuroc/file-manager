@@ -1,7 +1,7 @@
-import { ParsedUrlQuery } from 'querystring'
+import { TRouterRunFun } from '../router'
 
-/** 创建文件夹 */
-function run(query: ParsedUrlQuery) {
+const run: TRouterRunFun = (query, conn) => {
     return '创建文件夹'
 }
+
 export default run
