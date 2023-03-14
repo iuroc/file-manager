@@ -1,6 +1,6 @@
-import { TRouterRunFun } from '../router'
+import { TRouterRunFun } from '../type'
 
-const run: TRouterRunFun = (query, conn) => {
+const run: TRouterRunFun = async (query, conn) => {
     return '获取列表'
 }
 
