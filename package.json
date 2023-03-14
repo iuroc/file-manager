@@ -3,9 +3,7 @@
     "start": "ts-node src/server.ts"
   },
   "dependencies": {
-    "sqlite3": "^5.1.4"
-  },
-  "devDependencies": {
-    "@types/node": "^18.15.0"
+    "@types/node": "^18.15.3",
+    "sqlite3": "^5.1.6"
   }
 }
