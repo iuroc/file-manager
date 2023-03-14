@@ -14,3 +14,12 @@
 ```bash
 npm run start
 ```
+
+## Docker 部署
+
+```bash
+git clone https://github.com/oyps/file-manager.git
+cd file-manager
+docker build -t file-manager .
+docker run --name file-manager -p 8000:8000 file-manager
+```
