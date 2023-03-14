@@ -19,7 +19,7 @@ npm run start
 
 ```bash
 git clone https://github.com/oyps/file-manager.git
-cd file-manager
-docker build -t file-manager .
-docker run --name file-manager -p 8000:8000 file-manager
+project_name=file-manager
+docker build -t $project_name $project_name
+docker run --name $project_name -p 8000:8000 $project_name
 ```
