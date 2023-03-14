@@ -3,11 +3,9 @@
     "start": "ts-node src/server.ts"
   },
   "dependencies": {
-    "mysql": "^2.18.1",
     "sqlite3": "^5.1.4"
   },
   "devDependencies": {
-    "@types/mysql": "^2.15.21",
     "@types/node": "^18.15.0"
   }
 }
