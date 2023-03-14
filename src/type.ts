@@ -9,12 +9,13 @@ export type TResponse = {
     msg: string,
     /** 响应数据 */
     data: any
-}
+} | string
 
 /** 路由响应函数 */
 export type TRouterRunFun = (
     /** URL 参数 */
     query: ParsedUrlQuery,
     /** 数据库连接 */
-    conn: Database
-) => Promise<TResponse | string>
+    conn: Database,
+    callback: (data: TResponse) => void
+) => void
