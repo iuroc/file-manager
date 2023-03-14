@@ -1,5 +1,5 @@
 FROM node
-RUN npm install ts-node && \
+RUN npm install ts-node -g && \
     npm install
 COPY . /usr/src
 WORKDIR /usr/src
