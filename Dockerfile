@@ -1,5 +1,6 @@
 FROM node
-RUN npm install ts-node -g && \
+RUN npm install npm@9.6.1 -g && \
+    npm install ts-node -g && \
     npm install
 COPY . /usr/src
 WORKDIR /usr/src
